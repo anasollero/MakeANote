@@ -1,4 +1,5 @@
 # MakeANote
+Um projeto para organização de tarefas a prazo, recorrentes, notas e lembretes de cada usuário, sendo possível também ter tarefas compartilhadas entre usuários.
 
 <hr>
 
