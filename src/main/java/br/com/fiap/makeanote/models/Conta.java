@@ -1,15 +1,43 @@
 package br.com.fiap.makeanote.models;
 
-public class Conta {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
+@Entity
+public class Conta {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @NotBlank(message = "Um nome é obrigatório")
+    @Size(min = 5, max = 255)
     private String nome;
+    @NotBlank(message = "O e-email é obrigatório")
+    @Size(min = 5, max = 255)
     private String email;
+    @NotBlank(message = "A senha é obrigatória")
+    @Size(min = 5, max = 255)
     private String senha;
+
+    protected Conta() {
+
+    }
 
     public Conta(String nome, String email, String senha) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -39,7 +67,8 @@ public class Conta {
     @Override
     public String toString() {
         return "Conta{" +
-                "nome='" + nome + '\'' +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
                 ", senha='" + senha + '\'' +
                 '}';
