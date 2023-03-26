@@ -1,9 +1,6 @@
 package br.com.fiap.makeanote.controllers;
 
-
-import br.com.fiap.makeanote.models.Conta;
 import br.com.fiap.makeanote.models.Tarefa;
-import br.com.fiap.makeanote.repository.ContaRepository;
 import br.com.fiap.makeanote.repository.TarefaRepository;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
