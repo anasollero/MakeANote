@@ -18,7 +18,7 @@ public class Tarefa {
     @NotBlank(message = "Um título é obrigatório")
     @Size(min = 5, max = 255)
     private String titulo;
-    @Size(min = 5, max = 255)
+    @Size(min = 0, max = 255)
     private String descricao;
     @NotNull
     private LocalDate data;
