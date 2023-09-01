@@ -13,7 +13,7 @@ public class Conta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank(message = "Um nome é obrigatório")
-    @Size(min = 5, max = 255)
+    @Size(min = 3, max = 255)
     private String nome;
     @NotBlank(message = "O e-email é obrigatório")
     @Size(min = 5, max = 255)
