@@ -27,9 +27,6 @@ tasks.named('test') {
 }
 
 jar {
-	from('src/main/resources') {
-		include '**/*.*'
-	}
 	manifest {
 		attributes(
 				'Class-Path': configurations.runtimeClasspath.files.collect { it.getName() }.join(' '),
