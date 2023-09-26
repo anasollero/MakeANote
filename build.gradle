@@ -23,6 +23,7 @@ dependencies {
 }
 
 tasks.jar {
+	manifest.attributes["Class-Path"] = configurations.runtimeClasspath.files.collect { it.getName() }.join((' '))
 	manifest.attributes["Main-Class"] = "br.com.fiap.makeanote.MakeanoteApplication"
 }
 
