@@ -22,11 +22,15 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 }
 
-jar {
-	manifest {
-		attributes(
-				'Main-Class': 'br.com.fiap.makeanote.MakeanoteApplication',
-				'Class-Path': configurations.runtimeClasspath.files.collect { it.getName() }.join(' ')
-		)
-	}
+tasks.jar {
+	manifest.attributes["Main-Class"] = "JavaAddressRecorder"
 }
+
+//jar {
+//	manifest {
+//		attributes(
+//				'Main-Class': 'br.com.fiap.makeanote.MakeanoteApplication',
+//				'Class-Path': configurations.runtimeClasspath.files.collect { it.getName() }.join(' ')
+//		)
+//	}
+//}
