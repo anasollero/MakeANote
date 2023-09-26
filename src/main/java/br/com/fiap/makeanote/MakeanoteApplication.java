@@ -12,15 +12,15 @@ public class MakeanoteApplication {
         SpringApplication.run(MakeanoteApplication.class, args);
     }
 
-    @Bean
-    public CharacterEncodingFilter getCharacterEncodingFilter() {
-
-        CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
-
-        encodingFilter.setEncoding("UTF-8");
-        encodingFilter.setForceEncoding(true);
-
-        return encodingFilter;
-
-    }
+//    @Bean
+//    public CharacterEncodingFilter getCharacterEncodingFilter() {
+//
+//        CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
+//
+//        encodingFilter.setEncoding("UTF-8");
+//        encodingFilter.setForceEncoding(true);
+//
+//        return encodingFilter;
+//
+//    }
 }
