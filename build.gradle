@@ -23,7 +23,7 @@ dependencies {
 }
 
 tasks.jar {
-	manifest.attributes["Main-Class"] = "JavaAddressRecorder"
+	manifest.attributes["Main-Class"] = "br.com.fiap.makeanote.MakeanoteApplication"
 }
 
 //jar {
