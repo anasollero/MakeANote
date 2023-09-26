@@ -24,3 +24,12 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+jar {
+	manifest {
+		attributes(
+//				'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+				'Main-Class': 'br.com.fiap.makeanote.MakeanoteApplication'
+		)
+	}
+}
