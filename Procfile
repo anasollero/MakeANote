@@ -1,0 +1,1 @@
+web: java -jar build/libs/makeanote-0.0.1-SNAPSHOT.jar
