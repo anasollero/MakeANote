@@ -22,7 +22,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-tasks.jar{
+tasks.jar {
+	enabled = false
 	manifest{
 		attributes["Main-Class"] = "br.com.fiap.makeanote.MakeanoteApplication"
 	}
